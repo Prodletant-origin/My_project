@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2970767217434543959}
   m_Layer: 0
   m_Name: Bullet
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1748046348893670847}
-  m_LocalRotation: {x: -0, y: -0, z: 0.338033, w: 0.9411343}
+  m_LocalRotation: {x: 0, y: 0, z: 0.3380317, w: 0.94113475}
   m_LocalPosition: {x: -13.49, y: -8.551, z: 0}
   m_LocalScale: {x: 0.2019462, y: 0.2019462, z: 0.2019462}
   m_ConstrainProportionsScale: 0
@@ -101,7 +101,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0.5
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -121,8 +121,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.52754545, y: -0.002742261}
-  m_Size: {x: 0.41973144, y: 0.29239088}
+  m_Offset: {x: 0.075138964, y: -0.0027372944}
+  m_Size: {x: 1.3245473, y: 0.29239687}
   m_Direction: 1
 --- !u!114 &2970767217434543959
 MonoBehaviour:

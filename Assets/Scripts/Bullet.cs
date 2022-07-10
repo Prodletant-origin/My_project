@@ -16,15 +16,17 @@ public class Bullet : MonoBehaviour
     void Update()
     {
         lastVelocity = rb.velocity;
+        Destroy(gameObject, 5.0f);
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
         var speed = lastVelocity.magnitude;
-        var direction = Vector2.Reflect(lastVelocity.normalized, collision.contacts[0].normal);
+        var direction = Vector3.Reflect(lastVelocity.normalized, collision.contacts[0].normal);
 
         rb.velocity = direction * speed;
 
-        Destroy(gameObject, 10.0f);
+
+        
     }
 }
