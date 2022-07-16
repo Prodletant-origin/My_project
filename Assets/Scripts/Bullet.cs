@@ -29,6 +29,8 @@ public class Bullet : MonoBehaviour
         var direction = Vector3.Reflect(lastVelocity.normalized, collision.contacts[0].normal);
 
         rb.velocity = direction * speed;
-        
+
+        if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Enemy"))
+            Destroy(gameObject);
     }
 }
